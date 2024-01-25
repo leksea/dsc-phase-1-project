@@ -9,14 +9,40 @@ Stakeholders's company is expanding in to new industries to diversify its portfo
 
 ##  Data Understanding and Analysis
 
-We'll be using [dataset](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses) from the National Transportation Safety Board that includes aviation accident data from 1962 to 2023 about civil aviation accidents and selected incidents in the United States and international waters.
+### Source of data
+We'll be using [dataset](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses) from the National Transportation Safety Board that includes aviation accident data from 1962 to 2023 about civil aviation accidents and selected incidents in the United States and international waters. The data has no copyright, meaning that we can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
 
-It is up to you to decide what data to use, how to deal with missing values, how to aggregate the data, and how to visualize it in an interactive dashboard.
+### Description of data
 
-* **Your analysis should yield three concrete business recommendations.** The key idea behind dealing with missing values, aggregating and visualizaing data is to help your organization make data driven decisions. You will relate your findings to business intelligence by making recommendations for how the business should move forward with the new aviation opportunity.
+The data comes from National Transportation Safety Board aviation accident [dataset](https://www.ntsb.gov/Pages/AviationQueryV2.aspx).
+The accident data has been in collecion since the 40s. During the decades the dataset schema changed: new variables got added, some variables stoppped being reported, for some variables reporting format had changed. 
+That being said, the dataset is not uniform and contains a lot of missing data.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of the aviation division) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+The dataset contains 31 columns (mix of numerical and categorical) and 90348 rows. Each row has represents details about a reported accident or incident.
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+### Data Cleaning
+
+We're going to perform initial cleaning to get rid of duplicates in Make and Model. 
+We'll use column with FAR description codes to identify commercial flights and update information in column describng Purpose of the Flight.
+
+
+### Selecting relevant columns
+
+We'll be using columns describing injury count and type, columns describing make and model, date, and purpose of the flight to determine the additional filtering.
+
+![](results/nj_By_FlightPurpose_Unfiltered.png)
+
+### 
+
+
+### Historical data 
+![](results/nj_By_FlightPurpose_Unfiltered.png)
+
+
+Three visualizations (the same visualizations presented in the slides and notebook)
+
 
 ## Conclusion
+
+
+Summary of conclusions including three relevant findings
