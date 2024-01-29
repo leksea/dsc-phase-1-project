@@ -35,23 +35,29 @@ After displaying the historical data, we'll apply additional filtering: use year
 
 ![Historical data](results/Inj_By_FlightPurpose_Filtered.jpeg)
 
-### Additional data manipulation
-The dataset contains only reported accidents and does not contain the crucual information: total number of flights per make per model. To create a workaround, we'll be using the make and model's entry count instead. We're going to write a couple of supplemental functions, one is going to select top N (n = 20) makes and models, and another is going to normalize the number of injuries by the count. 
+### Safety Risks in the Context of Available Data 
+The dataset contains only reported accidents and does not contain the crucial information: total number of flights per make per model. We'll be using the make and model's avg fatal and serious injuries instead.
+
+### Most Frequent Flying Purposes.
+The top-10 most frequent flying purposes are:
+
+![Rated Safety Data](results/Hist_Flights.jpeg)
+We'll focus safety analysis on Personal, Business, Instructional as well as commercial, its not the most frequent but is within our business task.
+
 
 ### Safety Ratings for Four Most Frequent Flight Purposes
 
+![Rated Safety Data](results/Inj_By_Flight_Commercial.jpeg)
 ![Rated Safety Data](results/Inj_By_Flight_Business.jpeg)
+![Rated Safety Data](results/Inj_By_Flight_Instructional.jpeg)
 
 ## Conclusion
-Here are the top 8 recommended aircrafts 
+Here are the top 5 recommended aircrafts 
 
 | Commercial          | Business               | Instructional         |
 |---------------------|------------------------|------------------------|
 | Airbus A321         | Cessna 208B            | Cessna 172R            |
-| Boeing 737          | Cessna U206G           | Cessna 172P            |
-| Boeing 757          | Piper Pa 46-350P       | Cessna 172M            |
-| Boeing 787          | Piper Pa-18-150        | Cessna 172Rg           |
-| Airbus A330         | Robinson R22           | Piper Pa-28-140        |
-| Boeing 777          | Cessna T206H           | Cessna 172             |
-| Airbus A320         | Robinson R44 II        | Robinson R22 Beta      |
-| Bombardier CL 600    | Cessna T210N           | Piper Pa-28-161        |
+| Boeing 777          | Piper Pa 46-350P       | Cessna 172P            |
+| Bombardier CL 600   | Piper Pa-18-150        | Cessna 172M            |
+| Boeing 737          | Robinson R22           | Cessna 172Rg           |
+| Boeing 737          | Cessna U206G           | Piper Pa-28-140        |
