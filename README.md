@@ -32,7 +32,7 @@ We'll be using columns describing injury count and type, columns describing make
 After displaying the historical data, we'll apply additional filtering: use years after 2006 and analyze the top 4 categories of flying: Personal, Commercial, Business, Instructional. 
 
 ### Filtered Historical Data
-
+![Historical data](results/Inj_By_Year_Filtered.jpeg)
 ![Historical data](results/Inj_By_FlightPurpose_Filtered.jpeg)
 
 ### Safety Risks in the Context of Available Data 
