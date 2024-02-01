@@ -1,3 +1,10 @@
+## Directory structure
+
+* /data contains source data.
+* /results contains results of the analysis: plots and cleaned data.
+* proj1_notebook Python Jupyter Notebook. 
+* Final report is in [presentation.pdf](presentation.pdf)
+
 
 ## Project Overview
 
