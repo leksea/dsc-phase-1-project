@@ -4,6 +4,7 @@
 * /results contains results of the analysis: plots and cleaned data.
 * proj1_notebook Python Jupyter Notebook. 
 * Final report is in [presentation.pdf](presentation.pdf)
+* [SafetyDashboard.pdf](https://public.tableau.com/app/profile/alexandra.yakovleva/viz/AY_Phase_1_Dashboard/SafetyDashboard) Tableau Viz based on cleaned dataset.
 
 
 ## Project Overview
